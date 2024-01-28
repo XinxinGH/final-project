@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Berkshire+Swash&family=Rye&display=swap"
+      rel="stylesheet"
+    />
+    <title>Menu:Sourire Restaurantt</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-image: linear-gradient(180deg, pink, black);
+      }
+      ul {
+        font-family: "Alfa Slab One", serif;
+        list-style-type: none;
+        margin: 25px 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      ul li {
+        display: inline-block;
+      }
+      ul li a {
+        text-decoration: none;
+        color: black;
+        background-color: yellow;
+        padding: 5px 10px;
+        border: 2px solid black;
+        border-radius: 12%;
+        transition: 0.6s ease;
+      }
+      ul li a:hover {
+        background-color: black;
+        color: yellow;
+      }
+      ul li.active a {
+        background-color: yellow;
+        color: black;
+      }
+      h5 {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header section  -->
+    <header>
+      <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li class="active"><a href="menu.html">MENU</a></li>
+        <li><a href="order.html">ORDER</a></li>
+        <li><a href="suggestions_box.html">SUGGESTIONS BOX</a></li>
+      </ul>
+    </header>
+
+    <!-- carousel slide -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide w-25 h-25 mx-auto mt-5"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="5"
+          aria-label="Slide 6"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/motehingar.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>motehingar</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/palartar.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>palartar</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/rice salad.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>rice salad</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/stickyrice.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>steam sticky Rice</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/fried stickyrice.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>fried sticky Rice</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/vermicelli soup.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>vermicelli soup</h5>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- card  -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6 col-lg-2 mt-2">
+          <div class="card">
+            <img
+              src="images/motehingar.jpg"
+              class="card-img-top rounded-0"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Motehingar</h5>
+              <p class="card-text">1200 kyats</p>
+              <a href="#" class="btn">Order &#187;</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2 mt-2">
+          <div class="card">
+            <img
+              src="images/palartar.jpg"
+              class="card-img-top rounded-0"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">palartar</h5>
+              <p class="card-text">2000 kyats</p>
+              <a href="#" class="btn">Order &#187;</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2 mt-2">
+          <div class="card">
+            <img
+              src="images/rice salad.jpg"
+              class="card-img-top rounded-0"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">rice salad</h5>
+              <p class="card-text">1500 kyats</p>
+              <a href="#" class="btn">Order &#187;</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2 mt-2">
+          <div class="card">
+            <img
+              src="images/stickyrice.jpg"
+              class="card-img-top rounded-0"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">steam stickyrice</h5>
+              <p class="card-text">1000 kyats</p>
+              <a href="#" class="btn">Order &#187;</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2 mt-2">
+          <div class="card">
+            <img
+              src="images/fried stickyrice.jpg"
+              class="card-img-top rounded-0"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">fried stickyrice</h5>
+              <p class="card-text">1000 kyats</p>
+              <a href="#" class="btn">Order &#187;</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2 mt-2">
+          <div class="card">
+            <img
+              src="images/vermicelli soup.jpg"
+              class="card-img-top rounded-0"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">vermicelli soup</h5>
+              <p class="card-text">1000 kyats</p>
+              <a href="#" class="btn">Order &#187;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer section -->
+    <footer class="py-0 text-center text-muted">
+      <p>copyright &copy; 2023.</p>
+    </footer>
+    <script src="home.html"></script>
+    <script src="menu.html"></script>
+    <script src="order.html"></script>
+    <script src="suggestions_box.html"></script>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"
+  ></script>
+</html>
